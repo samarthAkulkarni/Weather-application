@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, html {
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-image: url('images/city.png');
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box {
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 20px;
+  padding: 60px 70px 30px 70px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 20px;
+}
+.inp-city {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+#city {
+  width: 14rem;
+  height: 30px;
+  padding: 0px 10px 0px 10px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  background-color: transparent;
   color: white;
+  outline: transparent;
+  font-size: 15px;
+  font-weight: 800;
+  transition: border 0.3s; 
 }
-
-.App-link {
-  color: #61dafb;
+#city:focus {
+  border: 2px solid rgb(0, 162, 255);
 }
-
-@keyframes App-logo-spin {
+.enter-btn {
+  display: flex;
+  justify-content: center;
+}
+#enter {
+  font-size: 14px;
+  padding: 6px 12px 6px 12px;
+  font-weight: 800;
+  background-color: rgb(3, 131, 206);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  outline: transparent;
+}
+#enter:hover {
+  background-color: rgb(9, 115, 177);
+}
+.headline {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.temp {
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.circle {
+  height: 20px;
+  width: 20px;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 70px;
+  border-top-color: transparent;
+  animation: rotate 1s infinite forwards linear;
+}
+@keyframes rotate {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+.note {
+  color: white;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.hidden {
+  display: none;
 }
