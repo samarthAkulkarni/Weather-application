@@ -6,4 +6,4 @@ CSS <br>
 JSX <br>
 
 # This website is deployed on github pages
-Link : 
+Link : https://samarthakulkarni.github.io/Weather-application/
